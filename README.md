@@ -1,2 +1,38 @@
 # POE-wede5020
 my wede POE part 1, 2 and 3.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, inital scale =1.0">
+    <title>SPCA non-profit organisation - home</title> <!--title of website-->
+</head>
+<img src="website/homepage/download.jpg" width="300" height="300"><!--used to place image in the website-->
+<!--SPCA durban and coast by SPCA available at https://www.spcadbn.org.za/newsimages/logo.jpg-->
+<body>
+<header>
+    <nav><!--used to show different links-->
+    <ul>
+       <li><a href="index.html">homepage</a></li><!--used to input the link for other websites-->
+       <li><a href="about.html">about us</a></li><!--li code used to list items-->
+       <li><a href="services.html">services</a></li>
+       <li><a href="contact.html">contact us</a></li>
+       <li><a href="enquries.html">enquries</a></li>
+    </ul>
+    </nav>
+</header>
+<br>
+<img src="website/homepage/dog.jpg" width="700" height="500"><!--spca durban and coast available at https://www.spcadbn.org.za/newsimages/spca-pup.jpg -->
+<main>
+     <h2>the aim of the SPCA</h2>
+    <p>the aim of the SPCA (society for the prevention of cruelty to animals), It's a non-profit animal welfare organization dedicated to protecting and improving the lives of animals.
+       SPCAs operate around the world, with the oldest being the Royal Society for the Prevention of Cruelty to Animals (RSPCA) in England. In South Africa, the NSPCA (National Council of SPCAs)
+       governs the various SPCAs around the country.</p><!--code used to start and end a paragraph-->
+</main>
+<img src="website/homepage/animals.jpg" width="700" height="500"><!--show me south africa by east london spca availabe at https://showme.co.za/east-london/files/2013/03/405099_358486570859791_328494984_n.jpg-->
+<footer>
+    <p>&copy; 2025 SPCA</p><!--used to show copyright-->
+</footer>
+
+</body>
+</html>
