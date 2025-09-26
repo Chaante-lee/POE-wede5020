@@ -8,7 +8,7 @@ h2 {
 }
 
 p{
-    color: aliceblue;
+    color: black;
 }
 header {
     background-color: rgb(129, 250, 209);
@@ -16,16 +16,54 @@ header {
     padding: 1em;
     text-align: center;
 }
-nav{ 
+
+.navbar { 
     list-style: none;
     display: flex;
     justify-content: center;
     margin: 0;
 }
+
+nav li {
+    margin: 0 15px;
+}
+
 nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     padding: 5px 10px;
+
+}
+nav a:hover {
+    background-color: lightskyblue;
+    color: darkblue;
+    border-radius: 5px;
+}
+
+.hero {
+    background-color: deepskyblue;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(222, 184, 135);
+    border: solid medium black;
+    border-radius: 35px;
+    padding: 25px;
+    margin: 15px;
+}
+
+footer {
+    text-align: center;
+    background: cadetblue;
+    color: black;
 
 }
