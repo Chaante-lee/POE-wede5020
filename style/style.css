@@ -5,10 +5,12 @@ body {
 h2 {
     color: navy;
     text-align: center;
+    font-size: xx-large
 }
 
 p{
     color: black;
+    font-size: large;
 }
 header {
     background-color: rgb(129, 250, 209);
@@ -43,7 +45,7 @@ nav a:hover {
 
 .hero {
     background-color: deepskyblue;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,5 +67,11 @@ footer {
     text-align: center;
     background: cadetblue;
     color: black;
-
 }
+
+iframe {
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey;
+    margin-top: 10px;
+    margin-bottom: 10px
