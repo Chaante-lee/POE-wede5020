@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+}
+h2 {
+    color: navy;
+    text-align: center;
+}
+
+p{
+    color: aliceblue;
+}
+header {
+    background-color: rgb(129, 250, 209);
+    color: beige;
+    padding: 1em;
+    text-align: center;
+}
+nav{ 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+
+}
