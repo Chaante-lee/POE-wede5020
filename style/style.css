@@ -13,6 +13,7 @@ p{
     line-height: 120%;
     color: black;
     font-size: larger;
+    text-align: justify;
 }
 header {
     background-color: rgb(129, 250, 209);
