@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, inital scale =1.0">
+    <meta name="description" content="SPCA non-profit organisation fight animal abuse.">
+    <meta name="keywords" content="non-profit, communities, volunteering, sponsorship">
+    <meta name="author" content="SPCA non-profit organisation.">
     <title>SPCA non-profit organisation - home</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="script.js" defer></script>
 </head>
 <img src="images/logo.jpg" width="300" height="300" alt="Centered Image" style="display: block; margin: 0 auto;"><!--used to place image in the website-->
 <!--SPCA durban and coast by SPCA available at https://www.spcadbn.org.za/newsimages/logo.jpg-->
@@ -22,6 +26,29 @@
 </header>
 <main><!--used to show main part of infomation-->
    <h2>enquries</h2>
+   <form id="enquiryForm">
+     <label for="name">Full Name:</label>
+     <!--this is to input the name of user-->
+     <input type="text" id="name" name="name" required minlength="3">
+      <!--this is to input text and min length of 3 characters-->
+     <label for="email">Email Address:</label>
+     <input type="email" id="email" name="email" required>
+
+     <label for="service">I would like to enquire about:</label>
+     <select id="service" name="service" required>
+       <option value="">--select an option--</option>
+       <option value="food">food assistance</option>
+       <option value="volunteer">volunteering</option>
+       <option value="sponsor">sponsorship</option>
+     </select>
+
+     <label for="date">preferred date:</label>
+     <input type="date" id="date" name="date" required>
+
+     <button type="submit">Submit enquiry</button>
+     <p id="enquiryResponse" class="response"></p>
+   </form>
+
    <p>lf you want to get involved click here at <a href="https://sandtonspca.org.za/get-involved/">volunteering.</a>
         <br>
     The SPCA relies mainly on bequests and donations from the public. We rely on public support in order to continue to do the work we do. There are various ways to support and get involved with our work.
