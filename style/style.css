@@ -67,12 +67,6 @@ div {
     margin: 15px;
 }
 
-footer {
-    text-align: center;
-    background: cadetblue;
-    color: black;
-}
-
 iframe {
     border: 5px solid black;
     border-radius: 10px;
@@ -80,3 +74,18 @@ iframe {
     margin-top: 10px;
     margin-bottom: 10px
 }
+
+footer {
+    text-align: center;
+    background: cadetblue;
+    color: black;
+}
+
+@media only screen and (max-width: 960px){
+    header {
+        background-color: red;
+        height: 375px;
+    }
+    iframe {
+        width: 320px;
+    }}
