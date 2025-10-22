@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, inital scale =1.0">
+    <meta name="description" content="SPCA non-profit organisation fight animal abuse.">
+    <meta name="keywords" content="non-profit, communities, volunteering, sponsorship">
+    <meta name="author" content="SPCA non-profit organisation.">
+    <title>SPCA non-profit organisation - home</title> <!--title of website-->
+    <link rel="stylesheet" type="text/css" href="style/gallery.css">
+</head>
+<h1 style="color: black;text-align: center;font-size: larger;"><b>SPCA non-profit organisation - home</b></h1>
+<img src="images/logo.jpg" width="200" height="200" alt="SPCA logo picture." style="display: block; margin: 0 auto;" ><!--used to place image in the website-->
+<!--SPCA durban and coast by SPCA available at https://www.spcadbn.org.za/newsimages/logo.jpg-->
+<body style="background-color: lightblue;">
+<header>
+    <nav><!--used to show different links-->
+    <ul>
+       <li><a href="index.html">homepage</a></li><!--used to input the link for other websites-->
+       <li><a href="about.html">about us</a></li><!--li code used to list items-->
+       <li><a href="services.html">services</a></li>
+       <li><a href="contact.html">contact us</a></li>
+       <li><a href="enquries.html">enquries</a></li>
+       <li><a href="gallery.html" class="active">gallery</a></li>
+    </ul>
+    </nav>
+</header>
+
+<main>
+  <h2>Our SPCA in Action</h2>
+  <p>Explore our photo gallery displaying the incredible work our volunteers and sponsors make possible</p>
+
+  <div class="gallery">
+    <img src="images/event1.jpg" alt="community event 1" class="gallery-img">
+    <img src="images/event2.jpg" alt="volunteers helping animals" class="gallery-img">
+    <img src="images/event3.jpg" alt="dog being saved" class="gallery-img">
+    <img src="images/event4.jpg" alt="volunteer adopting dog" class="gallery-img">
+    <img src="images/event5.jpg" alt="volunteer saving dog" class="gallery-img">
+    <img src="images/event6.jpg" alt="happy times" class="gallery-img">
+  </div>
+</main>
+
+<!--lightbox overlay-->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="">
+    <div class="lightbox-nav">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 SPCA</p><!--used to show copyright-->
+</footer>
+
+<script src="script.js" defer></script> 
+</body>
+</html>
