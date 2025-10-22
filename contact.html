@@ -8,8 +8,9 @@
     <meta name="author" content="SPCA non-profit organisation.">
     <title>SPCA non-profit organisation - home</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="script.js" defer></script>
 </head>
-<img src="images/logo.jpg" width="300" height="300" alt="Centered Image" style="display: block; margin: 0 auto;"><!--used to place image in the website-->
+<img src="images/logo.jpg" width="300" height="300" alt="SPCA logo image" style="display: block; margin: 0 auto;"><!--used to place image in the website-->
 <!--SPCA durban and coast by SPCA available at https://www.spcadbn.org.za/newsimages/logo.jpg-->
 <body>
 <header>
@@ -23,8 +24,32 @@
     </ul>
     </nav>
 </header>
+
 <main>
      <h2>contact us</h2>
+    <form id="contact">
+     <label for="cname">Full Name:</label>
+     <!--this is to input the name of user-->
+     <input type="text" id="cname" name="cname" required minlength="3">
+      <!--this is to input text and min length of 3 characters-->
+     <label for="cemail">Email Address:</label>
+     <input type="cemail" id="cemail" name="cemail" required>
+
+     <label for="ctype">Message type:</label>
+     <select id="ctype" name="ctype" required>
+       <option value="">--select an option--</option>
+       <option value="general">general enquiry</option>
+       <option value="feedback">feedback</option>
+       <option value="support">support</option>
+     </select>
+
+     <label for="Message">message:</label>
+     <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+
+     <button type="submit">Submit enquiry</button>
+     <p id="contactResponse" class="response"></p>
+   </form> 
+   
      <p>Below are a few of our locations nationwide.
          We are always available for donations and help for more information contact us at 0311234567 and email us at<a href="info@spcadbn.org.za"> info@spcadbn.org.za</a><!-- fake number used and a href code to link email address-->
     <br>
@@ -33,7 +58,7 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.1142356683913!2d18.494133288334673!3d-34.04094065878177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc43c260414e3b%3A0x6ca22d0832851686!2sCape%20of%20Good%20Hope%20SPCA!5e0!3m2!1sen!2sza!4v1758912564070!5m2!1sen!2sza" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.1335238457305!2d27.851509576433337!3d-32.973878873265846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e66e0fa78ee1c91%3A0xe982d405cdca5190!2sSPCA!5e0!3m2!1sen!2sza!4v1758912669863!5m2!1sen!2sza" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </main>
-<img src="images/images.jpg" width="600" height="400" alt="Centered Image" style="display: block; margin: 0 auto;">
+<img src="images/images.jpg" width="600" height="400" alt="image of dogs" style="display: block; margin: 0 auto;">
 <!--https://witness.co.za/wp-content/uploads/sites/144/2024/06/SPCA-Logo.jpg link for image from pmb spca bt the witness-->
 <footer>
     <p>&copy; 2025 SPCA</p>
