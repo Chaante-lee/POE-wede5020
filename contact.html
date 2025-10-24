@@ -28,14 +28,13 @@
 
 <main>
      <h2>contact us</h2>
-    <form id="contact">
-     <label for="cname">Full Name:</label>
-     <!--this is to input the name of user-->
-     <input type="text" id="cname" name="cname" required minlength="3">
-      <!--this is to input text and min length of 3 characters-->
-     <label for="cemail">Email Address:</label>
-     <input type="cemail" id="cemail" name="cemail" required>
+     <form id="contactForm">
+     <label>Name:</label>
+     <input type="text" id="name" placeholder="Your Name">
 
+     <label>Email:</label>
+     <input type="email" id="email" placeholder="Your Email">
+     
      <label for="ctype">Message type:</label>
      <select id="ctype" name="ctype" required>
        <option value="">--select an option--</option>
@@ -45,8 +44,8 @@
      </select>
 
      <label for="Message">message:</label>
-     <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
-
+     <textarea id="message" name="message" rows="5" placeholder="Your message" required minlength="10"></textarea>
+     
      <button type="submit">Submit enquiry</button>
      <p id="contactResponse" class="response"></p>
    </form> 

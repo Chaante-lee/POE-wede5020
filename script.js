@@ -28,29 +28,52 @@ document.addEventListener("DOMContentLoaded", () => { //declaring enquiry form a
         });
         }})
 
-    const contactForm = document.getElementById("contactForm");
-    if (contactForm) {
-        contactForm.addEventListener("submit", (e) => {
-            e.preventDefault();
-            const name = document.getElementById("cname").value.trim;
-            const email = document.getElementById("cemail").value.trim;
-            const type = document.getElementById("ctype").value;
-            const message = document.getElementById("message").value.trim();
-            if (!name || !email || !type || !message) { // if there are missing values then we get an alert 
-            alert("Please complete all fields");
-            return;
-            }
-            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-            if (!email.match(emailPattern)) {
-                alert("Please enter a valid email address.");
-                return
-            }
-            setTimeout(() => {
-               document.getElementById("contactResponse").textContent = 
-                  `Thank you ${name}, your ${type} message has been sent successfully!`;
-            }, 1000);
-        });
-    }
+const form = document.getElementById('contactForm');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent form from submitting normally
+
+  // Get values
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  // Clear previous errors
+  document.getElementById('nameError').textContent = '';
+  document.getElementById('emailError').textContent = '';
+  document.getElementById('messageError').textContent = '';
+
+  let valid = true;
+
+  // Name validation
+  if (name === '') {
+    document.getElementById('nameError').textContent = 'Please enter your name';
+    valid = false;
+  }
+
+  // Email validation
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (email === '') {
+    document.getElementById('emailError').textContent = 'Please enter your email';
+    valid = false;
+  } else if (!emailPattern.test(email)) {
+    document.getElementById('emailError').textContent = 'Please enter a valid email';
+    valid = false;
+  }
+
+  // Message validation
+  if (message === '') {
+    document.getElementById('messageError').textContent = 'Please enter your message';
+    valid = false;
+  }
+
+  // If all fields are valid, create mailto link
+  if (valid) {
+    const mailtoLink = `mailto:recipient@example.com?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + "\n\nFrom: " + name + " (" + email + ")")}`;
+    window.location.href = mailtoLink;
+  }
+});
+
 // ====== GALLERY LIGHTBOX FUNCTIONALITY ======
 const galleryImages = document.querySelectorAll(".gallery-img");
 const lightbox = document.getElementById("lightbox");
@@ -91,3 +114,7 @@ prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
 lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) lightbox.style.display = "none";
 }); 
+
+function changeColor() {
+  document.getElementById("coloredText").style.color = "orange";
+}

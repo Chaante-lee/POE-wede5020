@@ -1,12 +1,9 @@
-body {
+body{
     font-family: Arial, sans-serif;
     background-color: lightblue;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+    .search-bar { margin-bottom: 20px; }
+    .product { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+    .product-name { font-weight: bold; }
 }
 
 h2 {
@@ -90,6 +87,11 @@ form {
   gap: 1rem;
 }
 
+form { max-width: 400px; margin: auto; }
+  input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+  button { padding: 10px 20px; }
+  .error { color: red; font-size: 0.9em; }
+
 input, select, textarea, button {
   padding: 0.6rem;
   border: 1px solid #ccc;
@@ -120,9 +122,6 @@ img.responsive-img {
 }
 
 div {
-    width: 100px;
-    height: 100px;
-    background-color: lightgreen;
     border: solid medium black;
     border-radius: 35px;
     padding: 25px;
