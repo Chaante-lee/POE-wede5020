@@ -39,5 +39,52 @@ i added the responsive design that i missed in part 2
 }
 
 
-added gallery.html file 
+
+
+added gallery.html file and created gallery.js file 
+this is the images
+<div class="gallery">
+    <img src="images/event1.jpg" alt="community event 1" class="gallery-img">
+    <img src="images/event2.jpg" alt="volunteers helping animals" class="gallery-img">
+    <img src="images/event3.jpg" alt="dog being saved" class="gallery-img">
+    <img src="images/event4.jpg" alt="volunteer adopting dog" class="gallery-img">
+    <img src="images/event5.jpg" alt="volunteer saving dog" class="gallery-img">
+    <img src="images/event6.jpg" alt="happy times" class="gallery-img">
+  </div>
+
+this is the lightbox code added in 
+<!--lightbox overlay-->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="">
+    <div class="lightbox-nav">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+    </div>
+</div>
+
+
+interactive map code
+<title>Our Map </title>
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<style>
+  #map { height: 500px; width: 100%; }
+</style>
+</head>
+<body>
+
+<h1>Community Map</h1>
+<div id="map"></div>
+
+<!-- Leaflet JS -->leaflet code
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="gallery.js"></script>
+
+i also updated the size of the spca logo for everypage so its the same size
+
 updated proper seo 
+<meta name="description" content="SPCA non-profit organisation fight animal abuse.">
+    <meta name="keywords" content="non-profit, communities, volunteering, sponsorship">
+    <meta name="author" content="SPCA non-profit organisation.">
+
