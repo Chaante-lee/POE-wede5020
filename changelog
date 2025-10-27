@@ -88,3 +88,15 @@ updated proper seo
     <meta name="keywords" content="non-profit, communities, volunteering, sponsorship">
     <meta name="author" content="SPCA non-profit organisation.">
 
+interactive elements added
+<p id="coloredText" onmouseover="changeColor()">Hover over me to change color</p>
+
+.button {
+  background-color: blue;
+  transition: background-color 0.3s ease-in-out; /* Apply transition to background-color */
+}
+
+button:hover {
+  background-color: #ba5400;
+}
+
