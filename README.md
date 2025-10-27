@@ -1,4 +1,5 @@
-# POE-wede5020
+# POE-wede5020 please look here https://github.com/Chaante-lee/POE-wede5020/tree/origin for rest of stuff 
+
 my wede POE part 1, 2 and 3.
 <!DOCTYPE html>
 <html lang="en">
