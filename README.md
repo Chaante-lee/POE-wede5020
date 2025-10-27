@@ -5,31 +5,36 @@ my wede POE part 1, 2 and 3.
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, inital scale =1.0">
+    <meta name="description" content="SPCA non-profit organisation fight animal abuse.">
+    <meta name="keywords" content="non-profit, communities, volunteering, sponsorship">
+    <meta name="author" content="SPCA non-profit organisation.">
     <title>SPCA non-profit organisation - home</title> <!--title of website-->
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <h1 style="color: black;text-align: center;font-size: larger;"><b>SPCA non-profit organisation - home</b></h1>
-<img src="images/logo.jpg" width="200" height="200" alt="Centered Image" style="display: block; margin: 0 auto;" ><!--used to place image in the website-->
+<img src="images/logo.jpg" width="200" height="200" alt="SPCA logo picture." style="display: block; margin: 0 auto;" ><!--used to place image in the website-->
 <!--SPCA durban and coast by SPCA available at https://www.spcadbn.org.za/newsimages/logo.jpg-->
 <body style="background-color: lightblue;">
 <header>
     <nav><!--used to show different links-->
-    <ul>
+    <ul> 
        <li><a href="index.html">homepage</a></li><!--used to input the link for other websites-->
        <li><a href="about.html">about us</a></li><!--li code used to list items-->
        <li><a href="services.html">services</a></li>
        <li><a href="contact.html">contact us</a></li>
        <li><a href="enquries.html">enquries</a></li>
+       <li><a href="gallery.html" class="active">gallery</a></li>
     </ul>
     </nav>
 </header>
 <br><!--code used to show a line break-->
-<main>
+
    <section class="hero"><!--code used to define a standalone section in website-->
         <h2>Welcome to SPCA</h2>
-        <iframe width="400" height="205" src="https://www.youtube.com/embed/NrOlhPEQPRg?si=11ei7EdnB-J_LWC2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p><b>Together we can fight against animal abuse and neglectance.</b></p>
+        <iframe width="400" height="205" src="https://www.youtube.com/embed/NrOlhPEQPRg?si=611-7OB8UXDbx0Xm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p><b>Together we can fight against animal abuse and neglectance.</b></p>
    </section>
+<main>
    <section class="content"><!--code used to define a standalone section in website-->
         <h2><b>Our mission</b></h2>
         <p style="font-size: x-large;"><b>Our mission</b> is to prevent cruelty and promote the welfare of all animals,
@@ -48,7 +53,7 @@ Esté Kotzé
 Chief Executive Officer</p>
 </div>
 </main>
-<img src="images/dog.jpg" width="400" height="200" alt="Centered Image" style="display: block; margin: 0 auto;"><!--spca durban and coast available at https://www.spcadbn.org.za/newsimages/spca-pup.jpg -->
+<img src="images/dog.jpg" width="400" height="200" alt="picture of puppy" style="display: block; margin: 0 auto;"><!--spca durban and coast available at https://www.spcadbn.org.za/newsimages/spca-pup.jpg -->
 <main>
      <h2 style="color:black;text-align: center;"><b> Aim of the SPCA</b></h2>
     <p style="color: black;text-align: justify;">the aim of the SPCA (society for the prevention of cruelty to animals), It's a non-profit animal welfare organization dedicated to protecting and improving the lives of animals.
@@ -56,8 +61,7 @@ Chief Executive Officer</p>
        governs the various SPCAs around the country.</p><!--code used to start and end a paragraph-->
 </main>
 
-<img src="images/animals.jpg" width="500" height="300" alt="Centered Image" style="display: block; margin: 0 auto;"
-><!--show me south africa by east london spca availabe at https://showme.co.za/east-london/files/2013/03/405099_358486570859791_328494984_n.jpg-->
+<img src="images/animals.jpg" width="500" height="300" alt="picture of animals" style="display: block; margin: 0 auto;"><!--show me south africa by east london spca availabe at https://showme.co.za/east-london/files/2013/03/405099_358486570859791_328494984_n.jpg-->
 <footer>
     <p>&copy; 2025 SPCA</p><!--used to show copyright-->
 </footer>
